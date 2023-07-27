@@ -1,0 +1,160 @@
+ERROR - 2023-05-08 12:55:10 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'arsip-ci4' in C:\xampp\htdocs\arsip-ci4\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\arsip-ci4\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'arsip-ci4', 3306, '', 0)
+#1 C:\xampp\htdocs\arsip-ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\arsip-ci4\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\arsip-ci4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\arsip-ci4\app\Models\Model_auth.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\arsip-ci4\app\Controllers\Auth.php(45): App\Models\Model_auth->login('arifrivai@gmail...', '1234')
+#6 C:\xampp\htdocs\arsip-ci4\system\CodeIgniter.php(934): App\Controllers\Auth->login()
+#7 C:\xampp\htdocs\arsip-ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp\htdocs\arsip-ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\arsip-ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'arsip-ci4' in C:\xampp\htdocs\arsip-ci4\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\arsip-ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\arsip-ci4\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\arsip-ci4\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\arsip-ci4\app\Models\Model_auth.php(14): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\arsip-ci4\app\Controllers\Auth.php(45): App\Models\Model_auth->login('arifrivai@gmail...', '1234')
+#5 C:\xampp\htdocs\arsip-ci4\system\CodeIgniter.php(934): App\Controllers\Auth->login()
+#6 C:\xampp\htdocs\arsip-ci4\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 C:\xampp\htdocs\arsip-ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\arsip-ci4\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-05-08 12:55:10 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'arsip-ci4'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_user`
+WHERE `email` = :email:
+AND `password` = :password:', [...], false)
+ 3 APPPATH\Models\Model_auth.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Auth.php(45): App\Models\Model_auth->login('arifrivai@gmail.com', '1234')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth->login()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-08 13:30:35 --> Call to undefined function form_open()
+in APPPATH\Views\v_kategori.php on line 70.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('v_kategori', [], true)
+ 4 APPPATH\Views\layout\v_content.php(3): view('v_kategori')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\v_content.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/v_content', [], true)
+ 8 APPPATH\Views\layout\v_wrapper.php(5): view('layout/v_content')
+ 9 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\v_wrapper.php')
+10 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/v_wrapper', [], true)
+12 APPPATH\Controllers\Kategori.php(22): view('layout/v_wrapper', [...])
+13 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kategori->index()
+14 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+15 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-08 13:30:42 --> Call to undefined function form_open()
+in APPPATH\Views\v_kategori.php on line 70.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('v_kategori', [], true)
+ 4 APPPATH\Views\layout\v_content.php(3): view('v_kategori')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\v_content.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/v_content', [], true)
+ 8 APPPATH\Views\layout\v_wrapper.php(5): view('layout/v_content')
+ 9 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\v_wrapper.php')
+10 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/v_wrapper', [], true)
+12 APPPATH\Controllers\Kategori.php(22): view('layout/v_wrapper', [...])
+13 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kategori->index()
+14 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+15 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-08 13:30:55 --> Call to undefined function form_open()
+in APPPATH\Views\v_kategori.php on line 70.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('v_kategori', [], true)
+ 4 APPPATH\Views\layout\v_content.php(3): view('v_kategori')
+ 5 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\v_content.php')
+ 6 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/v_content', [], true)
+ 8 APPPATH\Views\layout\v_wrapper.php(5): view('layout/v_content')
+ 9 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\v_wrapper.php')
+10 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout/v_wrapper', [], true)
+12 APPPATH\Controllers\Kategori.php(22): view('layout/v_wrapper', [...])
+13 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kategori->index()
+14 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+15 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-08 13:58:06 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, `nama_file`) VALUES (:0:, :nama_file:)' at line 1 in C:\xampp\htdocs\webif21c-kel5\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\webif21c-kel5\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\webif21c-kel5\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\webif21c-kel5\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\webif21c-kel5\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\webif21c-kel5\app\Models\Model_Kategori.php(18): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\webif21c-kel5\app\Controllers\Kategori.php(28): App\Models\Model_Kategori->add(Array)
+#6 C:\xampp\htdocs\webif21c-kel5\system\CodeIgniter.php(934): App\Controllers\Kategori->add()
+#7 C:\xampp\htdocs\webif21c-kel5\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+#8 C:\xampp\htdocs\webif21c-kel5\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\webif21c-kel5\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-08 13:58:06 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, `nama_file`) VALUES (:0:, :nama_file:)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_kategori` (0, `nama_file`) VALUES (:0:, :nama_file:)', [...], false)
+ 2 APPPATH\Models\Model_Kategori.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Kategori.php(28): App\Models\Model_Kategori->add([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kategori->add()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-08 13:58:22 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, `nama_file`) VALUES (:0:, :nama_file:)' at line 1 in C:\xampp\htdocs\webif21c-kel5\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\webif21c-kel5\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\webif21c-kel5\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\webif21c-kel5\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\webif21c-kel5\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\webif21c-kel5\app\Models\Model_Kategori.php(18): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\webif21c-kel5\app\Controllers\Kategori.php(28): App\Models\Model_Kategori->add(Array)
+#6 C:\xampp\htdocs\webif21c-kel5\system\CodeIgniter.php(934): App\Controllers\Kategori->add()
+#7 C:\xampp\htdocs\webif21c-kel5\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+#8 C:\xampp\htdocs\webif21c-kel5\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\webif21c-kel5\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-08 13:58:22 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, `nama_file`) VALUES (:0:, :nama_file:)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_kategori` (0, `nama_file`) VALUES (:0:, :nama_file:)', [...], false)
+ 2 APPPATH\Models\Model_Kategori.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Kategori.php(28): App\Models\Model_Kategori->add([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kategori->add()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-08 13:58:28 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, `nama_file`) VALUES (:0:, :nama_file:)' at line 1 in C:\xampp\htdocs\webif21c-kel5\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\webif21c-kel5\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\webif21c-kel5\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\webif21c-kel5\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\webif21c-kel5\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\webif21c-kel5\app\Models\Model_Kategori.php(18): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\webif21c-kel5\app\Controllers\Kategori.php(28): App\Models\Model_Kategori->add(Array)
+#6 C:\xampp\htdocs\webif21c-kel5\system\CodeIgniter.php(934): App\Controllers\Kategori->add()
+#7 C:\xampp\htdocs\webif21c-kel5\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+#8 C:\xampp\htdocs\webif21c-kel5\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\webif21c-kel5\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-08 13:58:28 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0, `nama_file`) VALUES (:0:, :nama_file:)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_kategori` (0, `nama_file`) VALUES (:0:, :nama_file:)', [...], false)
+ 2 APPPATH\Models\Model_Kategori.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Kategori.php(28): App\Models\Model_Kategori->add([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kategori->add()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

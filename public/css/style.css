@@ -1,0 +1,40 @@
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: inline;
+    align-items: baseline;
+}
+
+.contact-form label,
+.contact-form textarea,
+.contact-form input[type="submit"] {
+    display: block;
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: rgb(62, 130, 176);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: rgb(62, 130, 176);
+}
+
+/* diagram */
+
+#area-chart,
+#line-chart,
+#bar-chart,
+#stacked,
+#pie-chart{
+  min-height: 250px;
+}

@@ -1,0 +1,16 @@
+CRITICAL - 2023-05-17 05:37:06 --> unlink(file_arsip/surat1.pdf): No such file or directory
+in APPPATH\Controllers\Arsip.php on line 191.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(file_arsip/surat1.pdf): No such file or directory', 'APPPATH\\Controllers\\Arsip.php', 191)
+ 2 APPPATH\Controllers\Arsip.php(191): unlink('file_arsip/surat1.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Arsip->delete('5')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Arsip))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-17 05:37:13 --> unlink(file_arsip/surat1.pdf): No such file or directory
+in APPPATH\Controllers\Arsip.php on line 191.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(file_arsip/surat1.pdf): No such file or directory', 'APPPATH\\Controllers\\Arsip.php', 191)
+ 2 APPPATH\Controllers\Arsip.php(191): unlink('file_arsip/surat1.pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Arsip->delete('5')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Arsip))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
